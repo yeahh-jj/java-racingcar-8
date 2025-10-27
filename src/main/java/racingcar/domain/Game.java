@@ -49,6 +49,10 @@ public class Game {
         return winners;
     }
 
+    public List<Car> getCars() {
+        return cars;
+    }
+
     // 테스트용
     public Game(List<Car> cars, int totalRounds, boolean TestMode) {
         this.cars = cars;

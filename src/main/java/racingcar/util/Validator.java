@@ -64,8 +64,8 @@ public class Validator {
         }
     }
 
-    private static void checkDuplicateName(Set<String> samseNames, String name) {
-        if (!samseNames.add(name)) {
+    private static void checkDuplicateName(Set<String> sameNames, String name) {
+        if (!sameNames.add(name)) {
             throw new IllegalArgumentException("중복된 이름은 사용할 수 없습니다.(" + name + ")");
         }
     }
