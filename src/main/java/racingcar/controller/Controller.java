@@ -18,6 +18,7 @@ public class Controller {
             printWinners();
         } catch (IllegalArgumentException e) {
             printError(e);
+            throw e;
         }
     }
 
